@@ -2,11 +2,15 @@
 set -e
 HOST=$1
 FILES="*.gz"
-DEST=/home/rich/ac
+DEST=~/ac
 
 # Remove spaces from file names
 echo "Removing spaces from file names..."
 for f in $FILES; do mv "$f" `echo $f | tr ' ' '_'`; done || true
+
+# Create the destination directory on the server
+echo "Creating the destination directory on the server..."
+ssh $HOST "mkdir -p $DEST" || true
 
 # Delete old files
 echo "Deleting old files on the server..."

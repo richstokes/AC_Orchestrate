@@ -2,7 +2,7 @@
 set -e
 HOST=$1
 FILES="*.gz"
-DEST=/home/rich/ac
+DEST=~/ac
 
 # Kill all existing servers
 echo "Killing existing Assetto Corsa servers..."
