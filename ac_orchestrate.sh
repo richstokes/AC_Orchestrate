@@ -3,7 +3,7 @@ set -e
 
 # check if the user has provided a host
 if [ -z "$1" ]; then
-    echo "Usage: $0 <host>"
+    echo "Usage: $0 <user@host>"
     exit 1
 fi
 
