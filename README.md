@@ -1,4 +1,4 @@
-Orchestrator for quickly copying Assetto Corsa and launching server packs on a dedicated server.  
+Orchestrator for quickly copying Assetto Corsa and launching (multiple) server packs on a dedicated server.  
 
 
 ## Requirements
